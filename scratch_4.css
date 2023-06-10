@@ -42,7 +42,6 @@ padding: 30px;
         max-height: 65px;
         transition: max-height 0.5s;
         overflow: hidden;
-
   }
   input{
      width: 100%;
@@ -98,3 +97,11 @@ padding: 30px;
     background: #eaeaea;
     color: #555;
  }
+
+
+#errors {
+   border: 1px red solid;
+   height: 50px;
+   padding-top: 15px;
+   color: red;
+}

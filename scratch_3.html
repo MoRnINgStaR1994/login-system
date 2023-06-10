@@ -8,26 +8,29 @@
     <title>Apple support Georgia</title>
      <link rel="stylesheet" type="text/css" href="./scratch_4.css"/>
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"> </script>
+    <script defer src="./scratch.js"></script>
 
 </head>
 <body>
-akFDAHKDJSFH AKSGH DAKHF AJFHAS KHDAKJF D
+
 <div class="container ">
     <div class="form-box">
         <h1 id="title"> sign up</h1>
-        <form>
+        <form id="form">
+            <div class="errors" id="errors" style="display: none;">
+            </div>
             <div class="input-group">
                 <div class=" input-field" id="nameField">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="Name">
                 </div>
 
-                   <div class=" input-field">
+                   <div class=" input-field" id="emailField">
                     <i class="fa-solid fa-envelope"></i>
                     <input type="email" placeholder="Email">
                 </div>
 
-                   <div class=" input-field">
+                   <div class=" input-field" id="passwordField">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" placeholder="Password">
                 </div>
@@ -45,31 +48,6 @@ akFDAHKDJSFH AKSGH DAKHF AJFHAS KHDAKJF D
 
 
 </div>
-<script>
-
-let signupBtn = document.getElementById("signupBtn")
-let signinBtn = document.getElementById("signinBtn")
-let nameField = document.getElementById("nameField")
-let title = document.getElementById("title")
-
-signinBtn.onclick = function(){
-   nameField.style.maxHeight ="0";
-   title.innerHTML = "sign in" ;
-   signupBtn.ClassList.add("disable");
-   signupBtn.ClaasList.remove("disable");
-
-
-}
-signupBtn.onclick = function(){
-   nameField.style.maxHeight ="60px";
-   title.innerHTML = "sign up" ;
-   signupBtn.ClassList.remove("disable");
-   signupBtn.ClaasList.add("disable");
-
-
-}
-
-</script>
 
 </body>
 </html>
